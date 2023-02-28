@@ -6,3 +6,15 @@ c) Find the maximum number from the new array and return the
 result
 Print the result. 
 */
+
+
+const func  = (arr1, arr2)=>{
+    const newArr = [...arr1, ...arr2]
+    let max = newArr[0]
+    for(let i = 1; i < newArr.length; i++){
+    if(max < newArr[i]){
+    max = newArr[i]
+    }
+    }
+    return max;
+};
